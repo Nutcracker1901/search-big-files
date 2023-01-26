@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="search-big-files:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/search_big_files_jar</output-path>
+    <root id="archive" name="search-big-files.jar">
+      <element id="module-output" name="search-big-files" />
+    </root>
+  </artifact>
+</component>
