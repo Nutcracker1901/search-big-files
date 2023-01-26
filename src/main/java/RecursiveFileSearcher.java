@@ -43,34 +43,4 @@ public class RecursiveFileSearcher extends RecursiveTask<TreeMap> {
 
         return files;
     }
-
-//    protected String compute() {
-//        Matcher matcher = Pattern.compile("/[A-Za-z0-9\\-_]+/[^\"?=]*")
-//                .matcher(doc.body().toString());
-//
-//        List<UrlRecursiveSearcher> taskList = new ArrayList<>();
-//
-//        while (matcher.find()) {
-//            String url = doc.body().toString().substring(matcher.start(), matcher.end());
-//
-//            if (!url.startsWith(siteUrl))
-//                url = siteUrl.concat(url);
-//
-//            if (!url.matches(".+\\.ru/.+\\..+") && !url.contains("#")
-//                    && !copy.contains(url.trim()) && url.startsWith(urlOrigin)) {
-//                copy.add(url.trim());
-//                UrlRecursiveSearcher task = new UrlRecursiveSearcher(url, copy, tab + "\t");
-//                task.fork();
-//                taskList.add(task);
-//
-//                System.out.println(tab + "\t" + url);
-//            }
-//        }
-//        for (RecursiveTask task : taskList) {
-//            urlOrigin = (task.join().equals("")) ? urlOrigin : urlOrigin.concat("\n" + task.join());
-//        }
-//
-//        return tab.concat(urlOrigin);
-//    }
-
 }
